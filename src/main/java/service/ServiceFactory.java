@@ -10,7 +10,6 @@ public final class ServiceFactory {
     private ServiceFactory() {}
 
     public ParsingService getParsingService() {
-
         return parsingService;
     }
 

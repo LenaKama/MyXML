@@ -69,14 +69,6 @@ public class Entity {
     }
 
     @Override
-    public String toString() {
-        if (this.attributes != null) {
-            return this.name + " " + this.attributes + " " + this.content + " " + this.layer + " " + this.list;
-        }
-        else return this.name+" "+this.list;
-    }
-
-    @Override
     public int hashCode() {
         int result = getLayer();
         result = 31 * result + (int)Math.round(getLayer());

@@ -19,7 +19,6 @@ public class MyParser {
     }
 
     public void parseLine(String line) {
-        //System.out.println(line);
         Matcher tags = TAGS.matcher(line);
 
         while (tags.find()) {

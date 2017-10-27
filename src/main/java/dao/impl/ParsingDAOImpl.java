@@ -6,10 +6,10 @@ import entity.Entity;
 import java.io.*;
 
 public class ParsingDAOImpl implements ParsingDAO {
-    ClassLoader classLoader = getClass().getClassLoader();
-    File file = new File(classLoader.getResource("task02.xml").getFile());
 
-    public Entity create() throws IOException {
+    public ParsingDAOImpl(){}
+
+    public Entity create(File file) throws IOException {
 
         MyParser parserLine = new MyParser();
 

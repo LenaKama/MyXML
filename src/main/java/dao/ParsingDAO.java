@@ -2,8 +2,9 @@ package dao;
 
 import entity.Entity;
 
+import java.io.File;
 import java.io.IOException;
 
 public interface ParsingDAO {
-    Entity create()throws IOException;
+    Entity create(File file)throws IOException;
 }

@@ -2,8 +2,9 @@ package service;
 
 import entity.Entity;
 
+import java.io.File;
 import java.io.IOException;
 
 public interface ParsingService {
-    Entity create()throws IOException;
+    Entity create(File file)throws IOException;
 }
